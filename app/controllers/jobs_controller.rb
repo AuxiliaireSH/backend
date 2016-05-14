@@ -4,7 +4,7 @@ class JobsController < ApplicationController
   # GET /jobs
   # GET /jobs.json
   def index
-    @jobs = Job.all
+    @jobs = Job.all.order(created_at: :desc)
 
     render json: @jobs.to_json(include: :user, except: :user_id)
   end
