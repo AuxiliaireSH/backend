@@ -6,7 +6,7 @@ class JobsController < ApplicationController
   def index
     @jobs = Job.all
 
-    render json: @jobs
+    render json: @jobs.to_json(include: :user, except: :user_id)
   end
 
   # GET /jobs/1
@@ -54,6 +54,6 @@ class JobsController < ApplicationController
     end
 
     def job_params
-      params.require(:job).permit(:title, :description, :price, :kind, :latitude, :longitude)
+      params.require(:job).permit(:title, :description, :price, :kind, :latitude, :longitude, :user_id)
     end
 end
