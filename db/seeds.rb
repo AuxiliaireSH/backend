@@ -13,8 +13,8 @@ users = User.create(
     {firstname: 'Johan', lastname: 'Andersson', username: 'kruken', password:'apabepa123', email:'kruken@example.org'}
   ])
 jobs = Job.create([
-    {title: 'Wash my car', description: 'My Ferrari needs washing', price: 1000, kind: 'Carwash', latitude: 51.503407, longitude:-0.127592, user_id: 1},
-    {title: 'Shitters clogged', description: 'Need help ASAP!', price: 1000, kind: 'Plumbing', latitude: 51.503407, longitude:-0.127592, user_id: 2},
-    {title: 'Furniture assembly', description: 'My IKEA furniture needs assembly', price: 500, kind: 'Assembly', latitude: 51.503407, longitude:-0.127592, user_id: 3},
-    {title: 'Computer not working', description: 'The screen is black', price: 9999, kind: 'IT', latitude: 51.503407, longitude:-0.127592, user_id: 4}
+  {title: 'Wash my car', description: 'My Ferrari needs washing. ' + "lorem ipsum "*10, price: 1000, kind: 'Carwash', latitude: 57.686292, longitude:11.983471, user_id: 1, created_at: "2016-05-10T12:00:22.776Z"},
+    {title: 'Shitters clogged', description: 'Need help ASAP!' + "lorem ipsum "*10, price: 1000, kind: 'Plumbing', latitude: 57.698917, longitude:11.946467, user_id: 2, created_at: "2016-05-9T11:37:22.776Z"},
+    {title: 'Furniture assembly', description: 'My IKEA furniture needs assembly' + "lorem ipsum "*10, price: 500, kind: 'Assembly', latitude:57.692993, longitude:12.010803, user_id: 3, created_at: "2016-05-14T19:43:22.776Z"},
+    {title: 'Computer not working', description: 'The screen is black' + "lorem ipsum "*10, price: 9999, kind: 'IT', latitude:57.698864, longitude:11.99295, user_id: 4, created_at: "2016-05-14T15:13:22.776Z"}
 ])
