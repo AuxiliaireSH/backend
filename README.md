@@ -6,6 +6,8 @@ $ gem install bundler
 $ git clone <this-repo>
 $ cd <this-repo>
 $ bundler install
+$ rake db:migrate
+$ rake db:seeds
 $ rails s
 ```
 profit!
