@@ -7,7 +7,7 @@ $ git clone <this-repo>
 $ cd <this-repo>
 $ bundler install
 $ rake db:migrate
-$ rake db:seeds
+$ rake db:seed
 $ rails s
 ```
 profit!
